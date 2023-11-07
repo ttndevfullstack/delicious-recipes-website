@@ -1,0 +1,92 @@
+.contact {
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.contact__content {
+    width: 72%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.contact__content>img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact__form-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact__form-bottom>input,
+.contact__form-top>input {
+    width: 480px;
+    height: 49px;
+    padding: 3px 3px 3px 5px;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background-color: transparent;
+}
+
+.contact__form-bottom>input::placeholder,
+.contact__form-top>input::placeholder {
+    color: black;
+}
+
+.contact__form-bottom>input:hover,
+.contact__form-bottom>input:focus,
+.contact__form-top>input:hover,
+.contact__form-top>input:focus {
+    border-bottom: 3px solid #000;
+}
+
+.contact__form-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact__form-bottom>input {
+    width: 100%;
+}
+
+.contact__form-bottom>input[class="inputMessage"] {
+    height: 135px;
+    padding-bottom: 50px;
+}
+
+.contact__form-bottom>button {
+    margin-top: 20px;
+    width: 236px;
+    height: 51px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "poppins";
+    color: var(--white-color);
+    background: linear-gradient(35deg, #494949, #313131);
+    transition: all ease 1s;
+}
+
+.contact__form-bottom>button:hover {
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
+    background: white;
+    border: 2px solid black;
+}
